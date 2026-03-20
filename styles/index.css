@@ -1,0 +1,62 @@
+/* nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 8px;
+} */
+
+nav > a {
+  display: inline-block;
+  /* margin: 5px 10px 5px 10px;
+  margin: 5px 10px; */
+  /* margin: 10px; */
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-bottom: 1px;
+  margin-left: px;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 5px;
+}
+
+header>h1{
+    color: rgb(62, 180, 72)
+}
+
+.header_p {  /*Altera oque tem classe header_p(ou o nome da classe) no html*/
+  font-size: 18px; /*Tamanho fonte*/
+  color: #ff0000; /*cor fonte*/
+  margin-top: 10px; /*espaçamento margem topo*/
+}
+
+.header_p_uppercase { /*Altera para upper case quem tem a função upper case*/
+  text-transform: uppercase; /*Realiza essa mudança*/
+}
+
+p {
+  font-size: 1rem; /*Altera o sub-texto geral | grau de importancia: 0.0.1*/
+  
+}
+
+#p_destaque {/*quem tem o # é o quem tem prioridade,
+    Para alterar a classe unica | grau de importancia 1.0.0*/
+  font-weight: 900; 
+  color:rgb(62, 180, 72)
+}
+
+p.p_destaque {
+  font-size: 1.5rem;
+  color: yellow
+}
+
+section { /*Altera todas as section geral 0.0.1*/
+  background-color: rgb(187, 161, 130);
+  color: rgb(255, 255, 255);
+}
+
+p.section_sobre {
+  background-color: rgb(133, 22, 22);
+}
+
+.sobre {/*Altera oque tem classe sobre(ou o nome da classe) no html*/
+  background-color: rgb(153, 117, 187);
+}
