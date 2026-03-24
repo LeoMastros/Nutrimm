@@ -22,9 +22,9 @@ header>h1{
     color: rgb(62, 180, 72)
 }
 
-.header_p {  /*Altera oque tem classe header_p(ou o nome da classe) no html*/
+.Juninho_bacalhau {  /*Altera oque tem classe [nome classe] no html*/
   font-size: 18px; /*Tamanho fonte*/
-  color: #ff0000; /*cor fonte*/
+  color: #fa0404; /*cor fonte*/
   margin-top: 10px; /*espaçamento margem topo*/
 }
 
@@ -37,10 +37,10 @@ p {
   
 }
 
-#p_destaque {/*quem tem o # é o quem tem prioridade,
+#Juniô {/*quem tem o # é o quem tem prioridade,
     Para alterar a classe unica | grau de importancia 1.0.0*/
   font-weight: 900; 
-  color:rgb(62, 180, 72)
+  color:#3bca47
 }
 
 p.p_destaque {
@@ -49,14 +49,21 @@ p.p_destaque {
 }
 
 section { /*Altera todas as section geral 0.0.1*/
-  background-color: rgb(187, 161, 130);
-  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 p.section_sobre {
-  background-color: rgb(133, 22, 22);
+  background-color: rgb(255, 254, 254);
 }
 
 .sobre {/*Altera oque tem classe sobre(ou o nome da classe) no html*/
-  background-color: rgb(153, 117, 187);
+  background-color: #3eb448;
+}
+#sobre{
+  background-color: #3eb448;
+}
+
+.Dicas{
+  color:rgb(62, 180, 72)
 }

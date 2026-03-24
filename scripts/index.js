@@ -16,21 +16,20 @@ for (let index = 0; index < navs.length; index++) {
   const link = createA(element.href, element.texto);
   nav.appendChild(link)
 }
-const sections = [
+//const sections = [
   {
-    title: "Sobre nós",
-    body: "Somos dedicados a promover uma vida saudável através de uma boa nutrição.",
+    //title: "Sobre nós",
+    //body: "Somos dedicados a promover uma vida saudável através de uma boa nutrição.",
   },
   {
-    title: "Dicas de Nutrição",
-    body: "Coma mais frutas e vegetais, beba bastante água e evite alimentos processados.",
+    //title: "Dicas de Nutrição",
+    //body: "Coma mais frutas e vegetais, beba bastante água e evite alimentos processados.",
   },
   {
-    title: "Contato",
-    body: "Entre em contato conosco pelo email: contato@nutricao.com",
+    //title: "Contato",
+    //body: "Entre em contato conosco pelo email: contato@nutricao.com",
   },
-];
-
+//];
 const p = createParagraph(
   "Este é um parágrafo criado com a função createParagraph.",
 );
