@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - NUTRIMM</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="scripts/utils.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="imagens/Nutrimm.jpg"
+        alt="Logo Nutrimm"
+        style="width: 160px; height: auto"/>
+
+      <h2 style="
+          display: inline-block;
+          vertical-align: top;
+          margin-left: 50px;
+          margin-top: 36px;
+          font-size: 1.3em;">
+          Tel: (13) 98158-0421 | Email: marilenemmastros@gmail.com
+      </h2>
+      <p class="Juninho_bacalhau">Cuide da sua saúde com dicas e informações sobre alimentação saudável.</p>
+    </header>
+    
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="dicas.html">Dicas</a>
+      <a href="Historia.html">História</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <main>
+      <section class="contato">
+        <h2>Fale Conosco</h2>
+        <p>Ficou com alguma dúvida ou deseja agendar a sua consulta? Entre em contato pelos nossos canais diretos ou preencha o formulário abaixo. Será um prazer atender você!</p>
+
+        <div class="contato-container">
+          
+          <div class="info-contato">
+            <h3>Nossos Canais</h3>
+            <p><strong>Telefone/WhatsApp:</strong> <br>
+              <a href="https://wa.me/5513981580421" target="_blank">(13) 98158-0421</a>
+            </p>
+            <p><strong>Email:</strong> <br>
+              <a href="mailto:marilenemmastros@gmail.com">marilenemmastros@gmail.com</a>
+            </p>
+          </div>
+
+          <div class="formulario-contato">
+            <h3>Envie uma Mensagem</h3>
+            <form action="#" method="POST">
+              <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu melhor email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+              </div>
+
+              <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Nutrimm. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

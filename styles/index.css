@@ -1,69 +1,103 @@
-/* nav {
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Navigation Styles */
+nav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  gap: 8px;
-} */
+  align-items: center;
+  gap: 16px;
+  background-color: #e8f5e9;
+  padding: 15px 30px;
+  border-bottom: 2px solid #c8e6c9;
+}
 
 nav > a {
-  display: inline-block;
-  /* margin: 5px 10px 5px 10px;
-  margin: 5px 10px; */
-  /* margin: 10px; */
-  margin-top: 5px;
-  margin-right: 20px;
-  margin-bottom: 1px;
-  margin-left: px;
-  border: 2px solid rgb(0, 0, 0);
-  padding: 5px;
+  text-decoration: none;
+  color: #2e7d32;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 15px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
-header>h1{
-    color: rgb(62, 180, 72)
+nav > a:hover {
+  border-color: #66bb6a;
+  background-color: #a5d6a7;
+  color: #1b5e20;
 }
 
-.Juninho_bacalhau {  /*Altera oque tem classe [nome classe] no html*/
-  font-size: 18px; /*Tamanho fonte*/
-  color: #fa0404; /*cor fonte*/
-  margin-top: 10px; /*espaçamento margem topo*/
+/* Header Styles */
+header > h1 {
+  color: #388e3c;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 30px 0;
+  font-weight: bold;
 }
 
-.header_p_uppercase { /*Altera para upper case quem tem a função upper case*/
-  text-transform: uppercase; /*Realiza essa mudança*/
+/* Utility Classes */
+.text-uppercase {
+  text-transform: uppercase;
 }
 
+.text-bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Paragraph Styles */
 p {
-  font-size: 1rem; /*Altera o sub-texto geral | grau de importancia: 0.0.1*/
-  
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #4e342e;
+  margin-bottom: 1.5rem;
 }
 
-#Juniô {/*quem tem o # é o quem tem prioridade,
-    Para alterar a classe unica | grau de importancia 1.0.0*/
-  font-weight: 900; 
-  color:#3bca47
+p.highlight {
+  font-size: 1.25rem;
+  color: #ff7043;
+  font-weight: bold;
 }
 
-p.p_destaque {
-  font-size: 1.5rem;
-  color: yellow
+/* Section Styles */
+section {
+  background-color: #f1f8e9;
+  color: #2e7d32;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
 }
 
-section { /*Altera todas as section geral 0.0.1*/
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+section.about {
+  background-color: #c8e6c9;
 }
 
-p.section_sobre {
-  background-color: rgb(255, 254, 254);
+p.section-about {
+  background-color: #e8f5e9;
+  padding: 15px;
+  border-radius: 6px;
+  color: #1b5e20;
 }
 
-.sobre {/*Altera oque tem classe sobre(ou o nome da classe) no html*/
-  background-color: #3eb448;
-}
-#sobre{
-  background-color: #3eb448;
+/* Specific Classes */
+#Juniô {
+  font-weight: 900;
+  color: #2e7d32;
 }
 
-.Dicas{
-  color:rgb(62, 180, 72)
+.Dicas {
+  color: #388e3c;
+  font-size: 1.2rem;
+  font-style: italic;
 }
