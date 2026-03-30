@@ -1,4 +1,10 @@
 
+body{
+  grid-template-columns: 200px 1fr 100px;
+}
+
+
+
 /* nav {
   display: flex;
   flex-direction: row;
@@ -18,6 +24,7 @@ nav > a {
   border: 0px solid rgb(0, 0, 0);
   padding: 5px;
 }
+
 
 header>h1{
     color: rgb(62, 180, 72)
