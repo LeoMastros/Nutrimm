@@ -4,17 +4,22 @@ body {
   justify-content: center;
 }
 
-nav{
-    display: flex;
-    background-color: #c0fabb;
-    padding:1px;
-    justify-content: space-around;
-    align-items: center;
+nav {
+  display: flex;
+  background-color: #c0fabb;
+  padding: 1px;
+  justify-content: space-around;
+  align-items: center;
 }
 
-nav a{
-    color: rgb(255, 5, 5);
-    text-decoration: none;
-    font-family: Arial;
-    font-weight: bold;
+nav a {
+  color: rgb(255, 5, 5);
+  text-decoration: none;
+  font-family: Arial;
+  font-weight: bold;
 }
+p.Juninho_bacalhau {
+  background-color: #c0fabb;
+  width: fit-content;
+}
+
