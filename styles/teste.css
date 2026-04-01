@@ -1,15 +1,53 @@
+:root {
+  
+  --bg-primary: #a6f79f5e;
+  --bg-secondary: #c0fabbf8;
+  --ft-large: 1.1rem;
+  --ft-small: 0.9rem;
+  --space: 33px;
+  --margin-bottom: 20px;
+  --color-secundary-font: red
+}
+
+
+html{
+  background-color: #c0fabb4b;
+}
+
+
 body {
   display: grid;
   grid-template-columns: 1000px;
   justify-content: center;
+  
 }
+
+ul{
+  font-size: var(--ft-large);
+}
+
+
+p{
+  margin-bottom: var(--margin-bottom);
+  font-size: var(--ft-large);
+}
+
+
+main{
+  line-height: var(--space);
+  padding: 10px;
+}
+
 
 nav {
   display: flex;
-  background-color: #c0fabb;
+  flex-wrap: wrap;
+  background-color: var(--bg-primary);
   padding: 1px;
   justify-content: space-around;
   align-items: center;
+  margin: 15px 0px;
+  font-size: var(--ft-small);
 }
 
 nav a {
@@ -18,8 +56,23 @@ nav a {
   font-family: Arial;
   font-weight: bold;
 }
-p.Juninho_bacalhau {
-  background-color: #c0fabb;
+.juninho-bacalhau {
+  background-color: var(--bg-primary);
   width: fit-content;
+  padding: 5px;
+  color: var(--color-secundary-font)
 }
 
+
+@media screen and (max-width: 820px) {
+  body {
+    grid-template-columns: 820px;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  body {
+    grid-template-columns: 412px;
+  }
+}

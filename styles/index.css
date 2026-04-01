@@ -1,9 +1,12 @@
-
-body{
-  grid-template-columns: 200px 1fr 100px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
+body {
+  grid-template-columns: 200px 1fr 100px;
+}
 
 /* nav {
   display: flex;
@@ -23,52 +26,60 @@ nav > a {
   margin-left: px;
   border: 0px solid rgb(0, 0, 0);
   padding: 5px;
+  background-color: #c0fabb38;
 }
 
-
-header>h1{
-    color: rgb(62, 180, 72)
+header > h1 {
+  color: rgb(0, 0, 0);
+  
 }
 
-.Juninho_bacalhau {  /*Altera oque tem classe [nome classe] no html*/
+.Juninho_bacalhau {
+  /*Altera oque tem classe [nome classe] no html*/
   font-size: 18px; /*Tamanho fonte*/
   color: #ec1a1a; /*cor fonte*/
   margin-top: 10px; /*espaçamento margem topo*/
+  
 }
 
-.header_p_uppercase { /*Altera para upper case quem tem a função upper case*/
+.header_p_uppercase {
+  /*Altera para upper case quem tem a função upper case*/
   text-transform: uppercase; /*Realiza essa mudança*/
+  
 }
 
 p {
   font-size: 1rem; /*Altera o sub-texto geral | grau de importancia: 0.0.1*/
-  
 }
 
-#Juniô {/*quem tem o # é o quem tem prioridade,
+#Juniô {
+  /*quem tem o # é o quem tem prioridade,
     Para alterar a classe unica | grau de importancia 1.0.0*/
-  font-weight: 900; 
-  color:#3bca47
+  font-weight: 900;
+  color: #3bca47;
 }
 
 p.p_destaque {
   font-size: 1.5rem;
-  color: yellow
+  color: yellow;
 }
 
-section { /*Altera todas as section geral 0.0.1*/
-  background-color: rgb(255, 255, 255);
+section {
+  /*Altera todas as section geral 0.0.1*/
+  
   color: rgb(0, 0, 0);
+  background-color: #c0fabb00;
 }
 
 p.section_sobre {
   background-color: rgb(255, 254, 254);
 }
 
-.sobre {/*Altera oque tem classe sobre(ou o nome da classe) no html*/
-  background-color: #d0fad4;
+.sobre {
+  /*Altera oque tem classe sobre(ou o nome da classe) no html*/
+  background-color: #c0fabb00;
 }
 
-.Dicas{
-  color:rgb(62, 180, 72)
+.Dicas {
+  color: rgb(62, 180, 72);
 }
