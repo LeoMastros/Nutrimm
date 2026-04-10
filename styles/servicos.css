@@ -1,0 +1,75 @@
+/* ==========================================
+   1. TOPO DA PÁGINA (INTRODUÇÃO)
+   ========================================== */
+.conteudo-servicos {
+  padding: 40px 20px;
+}
+
+.introducao-servicos {
+  margin-bottom: 50px;
+}
+
+.titulo-pagina {
+  font-size: 2.5rem;
+  color: var(--cor-texto-principal);
+  margin-bottom: 5px;
+}
+
+.subtitulo-pagina {
+  font-size: 1.5rem;
+  color: var(--cor-verde-nutrimm);
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.texto-informativo {
+  font-size: 1.1rem;
+  max-width: 800px;
+  color: #666;
+}
+
+/* ==========================================
+   2. GRADE DE CARTÕES (CARDS)
+   ========================================== */
+.grade-servicos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.cartao-servico {
+  background: var(--cor-branco);
+  padding: 30px;
+  border-radius: 12px;
+  border-top: 8px solid var(--cor-verde-nutrimm);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.cartao-servico:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.cartao-servico h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.cartao-servico p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   3. RESPONSIVIDADE
+   ========================================== */
+@media screen and (max-width: 768px) {
+  .titulo-pagina {
+    font-size: 2rem;
+  }
+}

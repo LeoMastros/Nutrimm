@@ -4,101 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nutrição e Saúde - NUTRIMM</title>
+    <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/teste.css" />
-    <script src="scripts/utils.js"></script>
+    <script src="scripts/utils.js" defer></script>
   </head>
 
   <body>
-    <header>
-      <img class="imagenss" src="imagens/nutrimm.png" alt="Logo Nutrimm" />
-
-      <h1 class="telefone-email">
-        Tel: (13) 98158-0421 | Email: marilenemmastros@gmail.com
-      </h1>
-      <ul class="juninho-bacalhau">
-        Cuide da sua saúde com dicas e informações sobre alimentação saudável.
-      </ul>
+    <header class="cabecalho">
+      <img
+        class="cabecalho-logo"
+        src="imagens/nutrimm.png"
+        alt="Logo Nutrimm"
+      />
+      <div class="cabecalho-info">
+        <h1 class="cabecalho-contato">
+          Tel: (13) 98158-0421 | Email: marilenemmastros@gmail.com
+        </h1>
+        <p class="cabecalho-slogan">
+          Cuide da sua saúde com dicas e informações sobre alimentação saudável.
+        </p>
+      </div>
     </header>
 
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="servicos.html">Serviços</a>
-      <a href="dicas.html">Dicas</a>
-      <a href="Historia.html">História</a>
-      <a href="contato.html">Contato</a>
-      <a href="localizacao.html">Localizacao</a>
+    <nav class="menu-principal">
+      <a class="menu-link link-ativo" href="index.html">Início</a>
+      <a class="menu-link" href="sobre.html">Sobre</a>
+      <a class="menu-link" href="servicos.html">Serviços</a>
+      <a class="menu-link" href="dicas.html">Dicas</a>
+      <a class="menu-link" href="Historia.html">História</a>
+      <a class="menu-link" href="contato.html">Contato</a>
+      <a class="menu-link" href="localizacao.html">Localização</a>
     </nav>
 
-    <main>
-      <section class="hero">
-        <h2>Bem-vindo à NUTRIMM</h2>
-        <p>
+    <main class="conteudo-home">
+      <section class="secao-principal">
+        <h2 class="titulo-home">Bem-vindo à NUTRIMM</h2>
+        <p class="subtitulo-home">
           Sua maior aliada na busca por saúde, bem-estar e qualidade de vida.
         </p>
       </section>
 
-      <section class="destaques">
-        <div class="card-container">
-          <div class="card">
-            <div class="icone"></div>
+      <section class="secao-destaques">
+        <div class="grade-cartoes">
+          <article class="cartao">
+            <div class="cartao-icone"></div>
             <h3>POR QUE A NUTRIMM?</h3>
             <p>
-              A NUTRIMM é especializada em identificar as necessidades
-              nutricionais de cada um, a fim de possibilitar que estes tenham
-              mais qualidade de vida e façam melhores escolhas alimentares para
-              sua rotina. Desta forma, se torna uma forte aliada na conquista do
-              seu bem-estar atingindo o objetivo desejado.
+              Especializada em identificar as necessidades nutricionais de cada
+              um para melhores escolhas alimentares.
             </p>
-          </div>
+          </article>
 
-          <div class="card">
-            <div class="icone"></div>
-            <h3>TRATAMENTOS ESPECÍFICOS</h3>
+          <article class="cartao">
+            <div class="cartao-icone"></div>
+            <h3>TRATAMENTOS</h3>
             <p>
-              Atendimento individual e personalizado com prescrições de dietas
-              específicas para o cuidado e tratamento nutricionais indicados
-              para diversas enfermidades, montagem de cardápios, planos
-              alimentares, avaliações físicas e de carências alimentares.
+              Atendimento personalizado com prescrições de dietas específicas
+              para o tratamento de diversas enfermidades.
             </p>
-          </div>
+          </article>
 
-          <div class="card">
-            <div class="icone"></div>
-            <h3>ATENDIMENTOS PARA:</h3>
+          <article class="cartao">
+            <div class="cartao-icone"></div>
+            <h3>ATENDIMENTOS</h3>
             <p>
-              Adultos, crianças e adolescentes, idosos, gestantes, para melhor
-              desempenho no esporte, reeducação alimentar, estética, funcional e
-              em diversas enfermidades e/ou para a prevenção destas.
+              Suporte para adultos, crianças, idosos e gestantes, além de foco
+              em nutrição esportiva e estética.
             </p>
-          </div>
+          </article>
         </div>
       </section>
 
-      <section class="especialidades-lista">
-        <h2>Você Encontra na NUTRIMM</h2>
-        <p>Estas são apenas algumas das nossas diversas especialidades:</p>
+      <section class="secao-lista">
+        <div class="lista-container">
+          <h2>Você Encontra na NUTRIMM</h2>
+          <p>Algumas das nossas especialidades:</p>
+          <ul class="lista-simples">
+            <li>✓ Nutrição comportamental</li>
+            <li>✓ Obesidade e emagrecimento</li>
+            <li>✓ Avaliação nutricional</li>
+            <li>✓ Exame de Bioimpedância</li>
+          </ul>
+          <a href="servicos.html" class="botao-padrao"
+            >Conheça todos os serviços</a
+          >
+        </div>
 
-        <ul>
-          <li>✓ Nutrição comportamental;</li>
-          <li>✓ Obesidade e emagrecimento;</li>
-          <li>✓ Avaliação nutricional e antropometria;</li>
-          <li>✓ Avaliações diversas (Exame de Bioimpedância, etc.)</li>
-          <li>✓ e mais...</li>
-        </ul>
-
-        <a href="servicos.html" class="btn">Conheça todos os nossos serviços</a>
-
-        <h2>Endereço:</h2>
-        <p>
-          Rua: Barão de Paranapiacaba, 233 Sala 605, Encruzilhada – Santos SP -
-          CEP 11050-251
-        </p>
+        <div class="caixa-endereco">
+          <h2>Onde Estamos</h2>
+          <p>
+            Rua: Barão de Paranapiacaba, 233 Sala 605, Encruzilhada – Santos SP
+          </p>
+          <a href="localizacao.html" class="botao-padrao">Ver no Mapa</a>
+        </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="rodape">
       <p>&copy; 2026 Nutrimm. Todos os direitos reservados.</p>
     </footer>
   </body>

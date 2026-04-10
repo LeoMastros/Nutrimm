@@ -1,0 +1,77 @@
+/* ==========================================
+   1. ESTRUTURA DA PÁGINA SOBRE
+   ========================================== */
+.conteudo-sobre {
+  padding: 40px 20px;
+}
+
+.caixa-informativa {
+  background-color: var(--cor-branco);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   2. TÍTULOS E DESTAQUES
+   ========================================== */
+.titulo-sobre {
+  color: var(--cor-verde-nutrimm);
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  text-align: center;
+  position: relative;
+}
+
+/* Linha decorativa embaixo do título principal */
+.titulo-sobre::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--cor-verde-nutrimm);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.subtitulo-sobre {
+  color: var(--cor-verde-nutrimm);
+  font-size: 1.6rem;
+  margin: 40px 0 15px 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+/* ==========================================
+   3. FORMATAÇÃO DE TEXTO
+   ========================================== */
+.caixa-informativa p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.texto-verde {
+  color: var(--cor-verde-nutrimm);
+  font-weight: bold;
+}
+
+/* ==========================================
+   4. RESPONSIVIDADE
+   ========================================== */
+@media screen and (max-width: 768px) {
+  .caixa-informativa {
+    padding: 25px;
+  }
+  
+  .titulo-sobre {
+    font-size: 1.8rem;
+  }
+  
+  .subtitulo-sobre {
+    font-size: 1.4rem;
+  }
+}

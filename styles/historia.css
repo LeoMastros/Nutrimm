@@ -1,0 +1,76 @@
+/* ==========================================
+   1. LAYOUT DA PÁGINA HISTÓRIA
+   ========================================== */
+.conteudo-historia {
+  padding: 40px 20px;
+  background-color: var(
+    --cor-branco
+  ); /* Fundo branco para parecer papel/texto */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  margin-top: 20px;
+}
+
+.titulo-historia {
+  color: var(--cor-verde-nutrimm);
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* ==========================================
+   2. TEXTO E FORMATAÇÃO
+   ========================================== */
+.texto-narrativo {
+  max-width: 800px; /* Limita a largura para o texto não ficar cansativo */
+  margin: 0 auto; /* Centraliza o bloco de texto */
+}
+
+.texto-narrativo p {
+  margin-bottom: 25px;
+  font-size: 1.15rem;
+  line-height: 1.8; /* Aumenta o espaço entre linhas para facilitar a leitura */
+  text-align: justify; /* Deixa o texto alinhado dos dois lados */
+  color: #444;
+}
+
+.marca-destaque {
+  color: var(--cor-verde-nutrimm);
+  font-weight: bold;
+}
+
+/* ==========================================
+   3. BLOCO DE ASSINATURA
+   ========================================== */
+.assinatura-container {
+  margin-top: 50px;
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+}
+
+.nome-profissional {
+  color: var(--cor-texto-principal);
+  font-size: 1.5rem;
+  letter-spacing: 2px; /* Espaçamento entre as letras para ficar elegante */
+}
+
+.registro-profissional {
+  color: var(--cor-verde-nutrimm);
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* ==========================================
+   4. RESPONSIVIDADE
+   ========================================== */
+@media screen and (max-width: 768px) {
+  .texto-narrativo p {
+    text-align: left; /* No celular, texto justificado fica com espaços estranhos */
+    font-size: 1rem;
+  }
+
+  .titulo-historia {
+    font-size: 1.8rem;
+  }
+}

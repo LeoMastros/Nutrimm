@@ -4,97 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dicas de Nutrição - NUTRIMM</title>
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/teste.css" />
-    <script src="scripts/utils.js"></script>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/dicas.css" />
   </head>
 
   <body>
-    <header>
-      <img class="imagenss" src="imagens/nutrimm.png" alt="Logo Nutrimm" />
-
-      <h1 class="telefone-email">
-        Tel: (13) 98158-0421 | Email: marilenemmastros@gmail.com
-      </h1>
-      <ul class="juninho-bacalhau">
-        Cuide da sua saúde com dicas e informações sobre alimentação saudável.
-      </ul>
+    <header class="cabecalho">
+      <img
+        class="cabecalho-logo"
+        src="imagens/nutrimm.png"
+        alt="Logo Nutrimm"
+      />
+      <div class="cabecalho-info">
+        <h1 class="cabecalho-contato">
+          Tel: (13) 98158-0421 | Email: marilenemmastros@gmail.com
+        </h1>
+        <p class="cabecalho-slogan">
+          Cuide da sua saúde com dicas e informações sobre alimentação saudável.
+        </p>
+      </div>
     </header>
 
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="servicos.html">Serviços</a>
-      <a href="dicas.html">Dicas</a>
-      <a href="Historia.html">História</a>
-      <a href="contato.html">Contato</a>
-      <a href="localizacao.html">Localizacao</a>
+    <nav class="menu-principal">
+      <a class="menu-link" href="index.html">Início</a>
+      <a class="menu-link" href="sobre.html">Sobre</a>
+      <a class="menu-link" href="servicos.html">Serviços</a>
+      <a class="menu-link link-ativo" href="dicas.html">Dicas</a>
+      <a class="menu-link" href="Historia.html">História</a>
+      <a class="menu-link" href="contato.html">Contato</a>
+      <a class="menu-link" href="localizacao.html">Localização</a>
     </nav>
 
-    <main>
-      <section class="dicas">
-        <h2>10 Passos para uma Alimentação Saudável</h2>
-        <p>
+    <main class="conteudo-dicas">
+      <section class="secao-passos">
+        <h2 class="titulo-principal">
+          10 Passos para uma Alimentação Saudável
+        </h2>
+        <p class="descricao-inicial">
           Confira algumas recomendações fundamentais baseadas em evidências
           científicas para garantir mais qualidade de vida, saúde e prazer nas
           suas refeições:
         </p>
 
-        <ol style="font-size: 19px">
-          <li>
+        <ol class="lista-passos">
+          <li class="item-dica">
             <strong>Base natural:</strong> Faça de alimentos frescos e
             <em>in natura</em> (frutas, vegetais, grãos, carnes e ovos) a base
             do seu prato.
           </li>
-          <li>
+          <li class="item-dica">
             <strong>Moderação nos temperos:</strong> Use óleos, gorduras, sal e
             açúcar em pequenas quantidades apenas para dar sabor.
           </li>
-          <li>
+          <li class="item-dica">
             <strong>Limite os processados:</strong> Queijos, pães artesanais e
             conservas são ótimos complementos, mas não devem ser a refeição
             principal.
           </li>
-          <li>
+          <li class="item-dica">
             <strong>Evite ultraprocessados:</strong> Fuja de produtos de pacote
-            cheios de aditivos artificiais (refrigerantes, biscoitos recheados,
-            macarrão instantâneo).
+            cheios de aditivos artificiais (refrigerantes, biscoitos, macarrão
+            instantâneo).
           </li>
-          <li>
+          <li class="item-dica">
             <strong>Atenção plena (Mindful Eating):</strong> Coma sem distrações
             (sem celular ou TV) para o cérebro registrar a refeição e perceber a
             saciedade.
           </li>
-          <li>
+          <li class="item-dica">
             <strong>Coma em companhia:</strong> Dividir a mesa com outras
             pessoas reduz a ansiedade, traz conexão e faz você comer mais
             devagar.
           </li>
-          <li>
+          <li class="item-dica">
             <strong>Compre em feiras:</strong> Priorize locais com alimentos
-            frescos, da estação e menos embalados, como sacolões e mercados de
-            bairro.
+            frescos, da estação e menos embalados.
           </li>
-          <li>
-            <strong>Vá para a cozinha:</strong> Preparar a própria comida, mesmo
-            pratos simples, garante o controle total sobre a qualidade do que
-            você ingere.
+          <li class="item-dica">
+            <strong>Vá para a cozinha:</strong> Preparar a própria comida
+            garante o controle total sobre a qualidade do que você ingere.
           </li>
-          <li>
+          <li class="item-dica">
             <strong>Planeje-se:</strong> Organize sua despensa e seu cardápio
-            semanal para não cair na armadilha do <em>delivery</em> e do
-            <em>fast-food</em> por puro cansaço.
+            semanal para não cair na armadilha do delivery por puro cansaço.
           </li>
-          <li>
+          <li class="item-dica">
             <strong>Leia os rótulos:</strong> Seja crítico com o marketing; não
-            se engane com embalagens que dizem ser "fit", mas têm nomes
-            estranhos nos ingredientes.
+            se engane com embalagens que dizem ser "fit", mas têm ingredientes
+            estranhos.
           </li>
         </ol>
       </section>
     </main>
 
-    <footer>
+    <footer class="rodape">
       <p>&copy; 2026 Nutrimm. Todos os direitos reservados.</p>
     </footer>
 

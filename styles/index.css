@@ -1,85 +1,110 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ==========================================
+   1. SEÇÃO PRINCIPAL
+   ========================================== */
+.secao-principal {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: var(--cor-branco);
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
 
-body {
-  grid-template-columns: 200px 1fr 100px;
+.titulo-home {
+  font-size: 2.5rem;
+  color: var(--cor-verde-nutrimm);
+  margin-bottom: 10px;
 }
 
-/* nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  gap: 8px;
-} */
+.subtitulo-home {
+  font-size: 1.2rem;
+  color: #666;
+}
 
-nav > a {
+/* ==========================================
+   2. GRADE DE CARTÕES
+   ========================================== */
+.grade-cartoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.cartao {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-top: 5px solid var(--cor-verde-nutrimm);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.cartao:hover {
+  transform: translateY(-5px);
+}
+
+.cartao h3 {
+  margin-bottom: 15px;
+  color: var(--cor-texto-principal);
+}
+
+/* ==========================================
+   3. LISTAS E ENDEREÇO
+   ========================================== */
+.secao-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 40px 20px;
+  background-color: var(--cor-fundo-suave);
+  border-radius: 10px;
+}
+
+.lista-simples {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.lista-simples li {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.caixa-endereco {
+  border-left: 2px solid var(--cor-verde-nutrimm);
+  padding-left: 30px;
+}
+
+/* ==========================================
+   4. BOTÕES
+   ========================================== */
+.botao-padrao {
   display: inline-block;
-  /* margin: 5px 10px 5px 10px;
-  margin: 5px 10px; */
-  /* margin: 10px; */
-  margin-top: 5px;
-  margin-right: 20px;
-  margin-bottom: 1px;
-  margin-left: px;
-  border: 0px solid rgb(0, 0, 0);
-  padding: 5px;
-  background-color: #c0fabb38;
+  background-color: var(--cor-verde-nutrimm);
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: 0.3s;
 }
 
-header > h1 {
-  color: rgb(0, 0, 0);
+.botao-padrao:hover {
+  background-color: #2e8f3b;
+  opacity: 0.9;
+}
+
+/* ==========================================
+   5. RESPONSIVIDADE
+   ========================================== */
+@media screen and (max-width: 768px) {
+  .secao-lista {
+    grid-template-columns: 1fr; /* No celular, lista e endereço ficam um sob o outro */
+  }
   
-}
-
-.Juninho_bacalhau {
-  /*Altera oque tem classe [nome classe] no html*/
-  font-size: 18px; /*Tamanho fonte*/
-  color: #ec1a1a; /*cor fonte*/
-  margin-top: 10px; /*espaçamento margem topo*/
-  
-}
-
-.header_p_uppercase {
-  /*Altera para upper case quem tem a função upper case*/
-  text-transform: uppercase; /*Realiza essa mudança*/
-  
-}
-
-p {
-  font-size: 1rem; /*Altera o sub-texto geral | grau de importancia: 0.0.1*/
-}
-
-#Juniô {
-  /*quem tem o # é o quem tem prioridade,
-    Para alterar a classe unica | grau de importancia 1.0.0*/
-  font-weight: 900;
-  color: #3bca47;
-}
-
-p.p_destaque {
-  font-size: 1.5rem;
-  color: yellow;
-}
-
-section {
-  /*Altera todas as section geral 0.0.1*/
-  
-  color: rgb(0, 0, 0);
-  background-color: #c0fabb00;
-}
-
-p.section_sobre {
-  background-color: rgb(255, 254, 254);
-}
-
-.sobre {
-  /*Altera oque tem classe sobre(ou o nome da classe) no html*/
-  background-color: #c0fabb00;
-}
-
-.Dicas {
-  color: rgb(62, 180, 72);
+  .titulo-home {
+    font-size: 2rem;
+  }
 }

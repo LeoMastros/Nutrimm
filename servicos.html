@@ -1,146 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nossos Serviços - NUTRIMM</title>
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/teste.css">
-    <script src="scripts/utils.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/servicos.css" />
   </head>
 
   <body>
-    <header>
-      <img class="imagenss" src="imagens/nutrimm.png" alt="Logo Nutrimm" />
-
-      <h1 class="telefone-email">
-        Tel: (13) 98158-0421 | Email: marilenemmastros@gmail.com
-      </h1>
-      <ul class="juninho-bacalhau">
-        Cuide da sua saúde com dicas e informações sobre alimentação saudável.
-      </ul>
+    <header class="cabecalho">
+      <img class="cabecalho-logo" src="imagens/nutrimm.png" alt="Logo Nutrimm" />
+      <div class="cabecalho-info">
+        <h1 class="cabecalho-contato">Tel: (13) 98158-0421 | Email: marilenemmastros@gmail.com</h1>
+        <p class="cabecalho-slogan">Cuide da sua saúde com dicas e informações sobre alimentação saudável.</p>
+      </div>
     </header>
 
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="servicos.html">Serviços</a>
-      <a href="dicas.html">Dicas</a>
-      <a href="Historia.html">História</a>
-      <a href="contato.html">Contato</a>
-      <a href="localizacao.html">Localizacao</a>
+    <nav class="menu-principal">
+      <a class="menu-link" href="index.html">Início</a>
+      <a class="menu-link" href="sobre.html">Sobre</a>
+      <a class="menu-link link-ativo" href="servicos.html">Serviços</a>
+      <a class="menu-link" href="dicas.html">Dicas</a>
+      <a class="menu-link" href="Historia.html">História</a>
+      <a class="menu-link" href="contato.html">Contato</a>
+      <a class="menu-link" href="localizacao.html">Localização</a>
     </nav>
 
-    <main>
-      <section class="servicos">
-        <div class="cabecalho-servicos">
-          <h2>Nossas Especialidades</h2>
-          <p>
-            Oferecemos um atendimento amplo e diferenciado. Conheça as áreas em
-            que podemos ajudar você a alcançar seus objetivos:
-          </p>
-        </div>
+    <main class="conteudo-servicos">
+      <section class="introducao-servicos"> 
+        <h2 class="subtitulo-pagina">Nossas Especialidades</h2>
+        <p class="texto-informativo">
+          Oferecemos um atendimento amplo e diferenciado. Conheça as áreas em
+          que podemos ajudar você a alcançar seus objetivos:
+        </p>
+      </section>
 
-        <div class="card-container">
-          <div class="card">
-            <h3>Nutrição Comportamental</h3>
-            <p>
-              Abordagem inovadora que foca na mudança da sua relação com a
-              comida. Sem classificar alimentos como "bons ou ruins", utilizamos
-              técnicas de Comer Intuitivo e Atenção Plena (Mindful Eating) para
-              criar hábitos saudáveis e consistentes, respeitando aspectos
-              sociais e emocionais.
-            </p>
-          </div>
+      <section class="grade-servicos">
+        <article class="cartao-servico">
+          <h3>Nutrição Comportamental</h3>
+          <p>Abordagem inovadora que foca na mudança da sua relação com a comida. Técnicas de Comer Intuitivo e Atenção Plena.</p>
+        </article>
 
-          <div class="card">
-            <h3>Obesidade e Emagrecimento</h3>
-            <p>
-              O processo de perda de peso deve ser suave e possível. Elaboramos
-              um plano alimentar individualizado com a sua participação,
-              respeitando a sua rotina. Nosso objetivo é superar as dificuldades
-              em conjunto, traçando caminhos seguros para o emagrecimento
-              sustentável.
-            </p>
-          </div>
+        <article class="cartao-servico">
+          <h3>Obesidade e Emagrecimento</h3>
+          <p>Plano alimentar individualizado respeitando a sua rotina para um emagrecimento sustentável e seguro.</p>
+        </article>
 
-          <div class="card">
-            <h3>Avaliação e Antropometria</h3>
-            <p>
-              Análise completa do seu estado nutricional através do histórico
-              alimentar e médico. Realizamos a verificação de peso, altura,
-              circunferências e dobras cutâneas para calcular com precisão o seu
-              IMC e índice de gordura visceral.
-            </p>
-          </div>
+        <article class="cartao-servico">
+          <h3>Avaliação e Antropometria</h3>
+          <p>Análise completa do estado nutricional, verificação de percentual de gordura, IMC e dobras cutâneas.</p>
+        </article>
 
-          <div class="card">
-            <h3>Nutrição Esportiva</h3>
-            <p>
-              O combustível certo para o seu rendimento. Criamos planos
-              personalizados para praticantes de atividades físicas, otimizando
-              a ingestão de nutrientes para cada fase do seu treino, visando
-              performance, saúde e estética.
-            </p>
-          </div>
+        <article class="cartao-servico">
+          <h3>Nutrição Esportiva</h3>
+          <p>Otimização da ingestão de nutrientes para performance, saúde e estética de praticantes de atividades físicas.</p>
+        </article>
 
-          <div class="card">
-            <h3>Infância e Adolescência</h3>
-            <p>
-              Investimento no futuro. Avaliamos o estado nutricional e
-              estabelecemos padrões alimentares propícios para o crescimento.
-              Apresentamos um novo olhar para alimentos recusados, respeitando
-              as opiniões dos jovens.
-            </p>
-          </div>
+        <article class="cartao-servico">
+          <h3>Infância e Adolescência</h3>
+          <p>Padrões alimentares propícios para o crescimento e um novo olhar para alimentos anteriormente recusados.</p>
+        </article>
 
-          <div class="card">
-            <h3>Terceira Idade</h3>
-            <p>
-              Foco na qualidade de vida e longevidade. A nutrição adequada ajuda
-              a minimizar o desgaste natural e atua na prevenção e controle de
-              doenças crônicas (como diabetes e hipertensão), fornecendo os
-              nutrientes que o corpo maduro precisa.
-            </p>
-          </div>
+        <article class="cartao-servico">
+          <h3>Terceira Idade</h3>
+          <p>Foco na longevidade e qualidade de vida, prevenindo e controlando doenças crônicas através da dieta.</p>
+        </article>
 
-          <div class="card">
-            <h3>Estética e Funcional</h3>
-            <p>
-              A beleza reflete o seu interior. Com o uso de alimentos
-              funcionais, atuamos na redução de desequilíbrios metabólicos que
-              causam acne, flacidez, celulite, envelhecimento precoce e queda de
-              cabelo. Saúde que se vê na pele.
-            </p>
-          </div>
+        <article class="cartao-servico">
+          <h3>Estética e Funcional</h3>
+          <p>Uso de alimentos funcionais para reduzir acne, flacidez e celulite. Saúde que se reflete na pele e cabelo.</p>
+        </article>
 
-          <div class="card">
-            <h3>Dislipidemias</h3>
-            <p>
-              Tratamento dietoterápico especializado para o controle do aumento
-              de lipídios no sangue (colesterol e triglicerídeos). Criamos um
-              plano alimentar personalizado para proteger a sua saúde
-              cardiovascular.
-            </p>
-          </div>
+        <article class="cartao-servico">
+          <h3>Dislipidemias</h3>
+          <p>Controle especializado de colesterol e triglicerídeos para proteção da sua saúde cardiovascular.</p>
+        </article>
 
-          <div class="card">
-            <h3>Bioimpedância</h3>
-            <p>
-              Oferecemos exame de bioimpedância de alta tecnologia. Uma análise
-              corporal completa que estima o seu percentual de gordura, músculo
-              esquelético, metabolismo basal e idade corporal para um
-              acompanhamento muito mais preciso.
-            </p>
-          </div>
-        </div>
+        <article class="cartao-servico">
+          <h3>Bioimpedância</h3>
+          <p>Exame de alta tecnologia para análise de massa muscular, gordura e metabolismo basal.</p>
+        </article>
       </section>
     </main>
 
-    <footer>
+    <footer class="rodape">
       <p>&copy; 2026 Nutrimm. Todos os direitos reservados.</p>
     </footer>
-
-    <script src="scripts/index.js"></script>
   </body>
 </html>

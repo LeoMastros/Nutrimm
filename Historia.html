@@ -4,44 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nossa História - NUTRIMM</title>
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/teste.css" />
-    <script src="scripts/utils.js"></script>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/historia.css" />
   </head>
 
   <body>
-    <header>
-      <img class="imagenss" src="imagens/nutrimm.png" alt="Logo Nutrimm" />
-
-      <h1 class="telefone-email">
-        Tel: (13) 98158-0421 | Email: marilenemmastros@gmail.com
-      </h1>
-      <ul class="juninho-bacalhau">
-        Cuide da sua saúde com dicas e informações sobre alimentação saudável.
-      </ul>
+    <header class="cabecalho">
+      <img
+        class="cabecalho-logo"
+        src="imagens/nutrimm.png"
+        alt="Logo Nutrimm"
+      />
+      <div class="cabecalho-info">
+        <h1 class="cabecalho-contato">
+          Tel: (13) 98158-0421 | Email: marilenemmastros@gmail.com
+        </h1>
+        <p class="cabecalho-slogan">Nutrição com propósito e história.</p>
+      </div>
     </header>
 
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="servicos.html">Serviços</a>
-      <a href="dicas.html">Dicas</a>
-      <a href="Historia.html">História</a>
-      <a href="contato.html">Contato</a>
-      <a href="localizacao.html">Localizacao</a>
+    <nav class="menu-principal">
+      <a class="menu-link" href="index.html">Início</a>
+      <a class="menu-link" href="sobre.html">Sobre</a>
+      <a class="menu-link" href="servicos.html">Serviços</a>
+      <a class="menu-link" href="dicas.html">Dicas</a>
+      <a class="menu-link link-ativo" href="Historia.html">História</a>
+      <a class="menu-link" href="contato.html">Contato</a>
+      <a class="menu-link" href="localizacao.html">Localização</a>
     </nav>
 
-    <main>
-      <section class="historia">
-        <h2>Como Começou</h2>
+    <main class="conteudo-historia">
+      <section class="secao-texto">
+        <h2 class="titulo-historia">Como Começou</h2>
 
-        <div class="historia-container">
+        <div class="texto-narrativo">
           <p>
             Inicialmente formada em Administração de Empresas pela Universidade
             Católica de Santos em 1995, sempre fui apaixonada pela área da saúde
             e do bem-estar. Diante dessa verdadeira vocação, resolvi transformar
             minha trajetória e me especializei através do curso de Nutrição,
-            também pela Universidade Católica de Santos, onde me graduei em
+            tambpé pela Universidade Católica de Santos, onde me graduei em
             2006.
           </p>
 
@@ -60,18 +62,18 @@
             atuar de uma forma mais personalizada e dedicada, visando um melhor
             bem-estar para os pacientes e também uma realização profissional
             pessoal. Diante desse desejo, resolvi criar a
-            <strong>NUTRIMM</strong>.
+            <strong class="marca-destaque">NUTRIMM</strong>.
           </p>
+        </div>
 
-          <div class="assinatura">
-            <h3>MARILENE MOUTA</h3>
-            <p>NUTRICIONISTA – CRN 22507</p>
-          </div>
+        <div class="assinatura-container">
+          <h3 class="nome-profissional">MARILENE MOUTA</h3>
+          <p class="registro-profissional">NUTRICIONISTA – CRN 22507</p>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="rodape">
       <p>&copy; 2026 Nutrimm. Todos os direitos reservados.</p>
     </footer>
 

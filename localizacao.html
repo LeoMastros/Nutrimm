@@ -1,58 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/teste.css">
-    <script src="scripts/utils.js"></script>
-</head>
-<body>
-   <header>
-      <img class="imagenss" src="imagens/nutrimm.png" alt="Logo Nutrimm" />
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Localização - NUTRIMM</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/localizacao.css" />
+    <script src="scripts/utils.js" defer></script>
+  </head>
 
-      <h1 class="telefone-email">
-        Tel: (13) 98158-0421 | Email: marilenemmastros@gmail.com
-      </h1>
-      <ul class="juninho-bacalhau">
-        Cuide da sua saúde com dicas e informações sobre alimentação saudável.
-      </ul>
+  <body>
+    <header class="cabecalho">
+      <img
+        class="cabecalho-logo"
+        src="imagens/nutrimm.png"
+        alt="Logo Nutrimm"
+      />
+      <div class="cabecalho-info">
+        <h1 class="cabecalho-contato">
+          Tel: (13) 98158-0421 | Email: marilenemmastros@gmail.com
+        </h1>
+        <p class="cabecalho-slogan">Encontre nosso consultório em Santos.</p>
+      </div>
     </header>
 
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="servicos.html">Serviços</a>
-      <a href="dicas.html">Dicas</a>
-      <a href="Historia.html">História</a>
-      <a href="contato.html">Contato</a>
-      <a href="localizacao.html">Localizacao</a>
+    <nav class="menu-principal">
+      <a class="menu-link" href="index.html">Início</a>
+      <a class="menu-link" href="sobre.html">Sobre</a>
+      <a class="menu-link" href="servicos.html">Serviços</a>
+      <a class="menu-link" href="dicas.html">Dicas</a>
+      <a class="menu-link" href="Historia.html">História</a>
+      <a class="menu-link" href="contato.html">Contato</a>
+      <a class="menu-link link-ativo" href="localizacao.html">Localização</a>
     </nav>
 
-    <main>
-         <div class="mapa-localizacao">
-          <h3>Endereço</h3>
-          <p>
-            Endereço: Rua Barão de Paranapiacaba, 233 -
-            <p b>Sala 605</p b>
-            Encruzilhada, Santos - SP, CEP: 11050-251
+    <main class="conteudo-localizacao">
+      <section class="secao-mapa">
+        <h2 class="titulo-sessao">Onde Estamos</h2>
+
+        <div class="bloco-endereco">
+          <h3>Endereço Completo:</h3>
+          <p class="texto-endereco">
+            Rua Barão de Paranapiacaba, 233 - <strong>Sala 605</strong><br />
+            Encruzilhada, Santos - SP<br />
+            CEP: 11050-251
           </p>
+        </div>
+
+        <div class="mapa-container">
           <h3>Como chegar:</h3>
           <iframe
-            src="https://maps.google.com/maps?q=Rua+Bar%C3%A3o+de+Paranapiacaba,+233+-+Encruzilhada,+Santos+-+SP&t=&z=17&ie=UTF8&iwloc=&output=embed"            width="100%"
-            height="350"
-            style="
-              border: 0;
-              border-radius: 8px;
-              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-              margin-top: 15px;
-            "
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.108485292817!2d-46.3312844!3d-23.9565551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce037213279147%3A0x6b4458f000b925b6!2sR.%20Bar%C3%A3o%20de%20Paranapiacaba%2C%20233%20-%20Encruzilhada%2C%20Santos%20-%20SP%2C%2011050-250!5e0!3m2!1spt-BR!2sbr!4v1711234567890!5m2!1spt-BR!2sbr"
+            class="mapa-frame"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           >
           </iframe>
         </div>
-</body>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p>&copy; 2026 Nutrimm. Todos os direitos reservados.</p>
+    </footer>
+  </body>
 </html>
