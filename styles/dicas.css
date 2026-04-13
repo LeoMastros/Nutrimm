@@ -48,6 +48,35 @@
   transition: 0.3s;
 }
 
+/*====== Cards =======*/
+.fonte{
+  color: var(--cor-verde-nutrimm);
+}
+
+
+.container-calculadoras {
+  display: flex; /* O comando que coloca um do lado do outro */
+  gap: 20px; /* O comando que dá espaço entre eles */
+  
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  min-height: 35px;
+  gap: 20px;
+  background: var(--cor-branco);
+  padding: 30px;
+  border-top: 8px solid var(--cor-verde-nutrimm);
+  line-height: 0.5;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.botao-calcular {
+  width: 100%; /* Ocupa a largura interna do card */
+  padding: 12px;
+}
 /* ==========================================
    3. RESPONSIVIDADE
    ========================================== */
@@ -73,7 +102,7 @@
   .header__contact {
     font-size: 1.1em;
   }
-  
+
   .titulo-servico {
     font-size: 2rem;
   }

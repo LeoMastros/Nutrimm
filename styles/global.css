@@ -3,13 +3,14 @@
    Aqui você muda as cores do site inteiro de uma vez.
    ========================================== */
 :root {
-  --cor-fundo-pagina: #c0fabb4b;
-  --cor-fundo-suave: #a6f79f5e;
-  --cor-verde-nutrimm: #38b249;
-  --cor-destaque-vermelho: #ec1a1a;
-  --cor-texto-principal: #333;
-  --cor-branco: #ffffff;
-  
+  --cor-fundo-pagina: #fdfdfd;
+  --cor-fundo-suave: #98d69359;
+  --cor-verde-nutrimm: #7ee45f;
+  --cor-destaque-vermelho: #fcfcfc;
+  --cor-texto-principal: #050505;
+  --cor-branco: #66f34a1a;
+  --cor-texto-contato: rgb(253, 253, 253);
+
   --fonte-principal: Arial, sans-serif;
   --espacamento-padrao: 20px;
 }
@@ -33,7 +34,10 @@ body {
   color: var(--cor-texto-principal);
   line-height: 1.6;
   display: grid;
-  grid-template-columns: minmax(auto, 1000px); /* Site centralizado com 1000px */
+  grid-template-columns: minmax(
+    auto,
+    1000px
+  ); /* Site centralizado com 1000px */
   justify-content: center;
 }
 
@@ -41,11 +45,17 @@ body {
    3. CABEÇALHO (Logo e Contatos)
    ========================================== */
 .cabecalho {
+  color:var(--cor-texto-contato);
   padding: var(--espacamento-padrao);
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  background-image: url("../Imagens/banner.jpg");
+  background-image:
+    linear-gradient(rgba(12, 12, 12, 0.26), rgb(10, 10, 10)),
+    url("../Imagens/banner.jpg");
 }
 
 .cabecalho-logo {
@@ -70,7 +80,7 @@ body {
    4. MENU DE NAVEGAÇÃO
    ========================================== */
 .menu-principal {
-  background-color: var(--cor-fundo-suave);
+  background-color: var(--cor-verde-nutrimm);
   padding: 10px;
   display: flex;
   justify-content: space-around;
@@ -107,5 +117,4 @@ body {
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
-  
 }

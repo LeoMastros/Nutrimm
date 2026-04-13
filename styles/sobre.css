@@ -1,3 +1,7 @@
+:root{
+  --cor-fundo-quem-somos: #1fd81f2f;
+
+}
 /* ==========================================
    1. ESTRUTURA DA PÁGINA SOBRE
    ========================================== */
@@ -5,11 +9,13 @@
   padding: 40px 20px;
 }
 
+
+
 .caixa-informativa {
-  background-color: var(--cor-branco);
+  background-color: var(--cor-fundo-quem-somos);
   padding: 40px;
   border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px #0000000d;
   max-width: 850px;
   margin: 0 auto;
 }
