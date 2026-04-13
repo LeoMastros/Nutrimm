@@ -36,7 +36,25 @@
     </nav>
 
     <main class="conteudo-dicas">
+      <script src="scripts/dicas.js"></script>
       <section class="secao-passos">
+      <h1 class="fonte">Calculadoras:</h1>
+      <div class="container-calculadoras">
+        <div class="card">
+          <h2>IMC:</h2>
+          <input type="number" id="peso" placeholder="Peso (ex: 70)" />
+          <input type="number" id="altura" placeholder="Altura (ex: 1.75)" />
+          <button class="botao-calcular" onclick="calcularIMC()">Calcular</button>
+          <p id="resultado""></p>
+        </div>
+
+        <div class="card">
+          <h2>Agua por dia:</h2>
+          <input type="number" id="pesoAgua" placeholder="Peso (ex: 70)" />
+          <button class="botao-calcular" onclick="calcularAgua()">Calcular</button>
+          <p id="Camporesultado"></p>
+        </div>
+      </div>
         <h2 class="titulo-principal">
           10 Passos para uma Alimentação Saudável
         </h2>
