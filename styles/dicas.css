@@ -49,20 +49,24 @@
 }
 
 /*====== Cards =======*/
-.fonte{
+.fonte {
   color: var(--cor-verde-nutrimm);
+  margin-bottom: 20px;
+  border-left: 5px solid var(--cor-verde-nutrimm);
+  padding-left: 15px;
 }
-
 
 .container-calculadoras {
   display: flex; /* O comando que coloca um do lado do outro */
-  gap: 20px; /* O comando que dá espaço entre eles */
-  
+  gap: 80px; /* O comando que dá espaço entre eles */
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 .card {
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: 400px;
   min-height: 35px;
   gap: 20px;
   background: var(--cor-branco);
@@ -72,10 +76,33 @@
   border-radius: 10px;
   margin-bottom: 10px;
 }
-
-.botao-calcular {
-  width: 100%; /* Ocupa a largura interna do card */
+.card input {
+  width: 100%;
   padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  background-color: #fcfcfc;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+.botao-calcular {
+  width: 100%;
+  background-color: var(--cor-verde-nutrimm);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+#resultado,
+#Camporesultado {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #2e7d32;
+  font-size: 1.2rem;
 }
 /* ==========================================
    3. RESPONSIVIDADE

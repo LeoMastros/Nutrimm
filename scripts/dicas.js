@@ -38,7 +38,7 @@ function calcularAgua() {
     const campo = document.getElementById('Camporesultado');
 
     if (peso > 0) {
-        const litros = (peso * 35) / 1000;
+        const litros = (peso * 36) / 1000;
         campo.innerHTML = `Sua meta é: <strong>${litros.toFixed(2)}L</strong>`;
     } else {
         alert("Por favor, insira o seu peso na calculadora de água.");
