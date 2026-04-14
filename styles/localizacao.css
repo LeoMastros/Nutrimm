@@ -53,16 +53,7 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   display: block;
 }
-
-/* ==========================================
-   4. RESPONSIVIDADE
-   ========================================== */
-@media screen and (max-width: 768px) {
-  .mapa-frame {
-    height: 300px; /* Mapa menor em telas de celular */
-  }
-
-  .conteudo-localizacao {
+.conteudo-localizacao {
     padding: 20px 10px;
   }
-}
+

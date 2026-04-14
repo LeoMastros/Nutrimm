@@ -60,17 +60,9 @@
   font-weight: bold;
   margin-top: 5px;
 }
-
-/* ==========================================
-   4. RESPONSIVIDADE
-   ========================================== */
-@media screen and (max-width: 768px) {
-  .texto-narrativo p {
-    text-align: left; /* No celular, texto justificado fica com espaços estranhos */
-    font-size: 1rem;
-  }
-
-  .titulo-historia {
+.titulo-historia {
     font-size: 1.8rem;
   }
-}
+
+
+  

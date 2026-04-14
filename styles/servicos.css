@@ -64,12 +64,6 @@
   color: #555;
   line-height: 1.6;
 }
-
-/* ==========================================
-   3. RESPONSIVIDADE
-   ========================================== */
-@media screen and (max-width: 768px) {
-  .titulo-pagina {
+.titulo-pagina {
     font-size: 2rem;
   }
-}

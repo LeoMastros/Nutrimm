@@ -65,19 +65,4 @@
   font-weight: bold;
 }
 
-/* ==========================================
-   4. RESPONSIVIDADE
-   ========================================== */
-@media screen and (max-width: 768px) {
-  .caixa-informativa {
-    padding: 25px;
-  }
-  
-  .titulo-sobre {
-    font-size: 1.8rem;
-  }
-  
-  .subtitulo-sobre {
-    font-size: 1.4rem;
-  }
-}
+

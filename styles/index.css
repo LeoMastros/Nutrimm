@@ -99,16 +99,6 @@
   background-color: #2e8f3b;
   opacity: 0.9;
 }
-
-/* ==========================================
-   5. RESPONSIVIDADE
-   ========================================== */
-@media screen and (max-width: 768px) {
-  .secao-lista {
-    grid-template-columns: 1fr; /* No celular, lista e endereço ficam um sob o outro */
-  }
-  
-  .titulo-home {
+.titulo-home {
     font-size: 2rem;
   }
-}
