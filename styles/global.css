@@ -27,6 +27,7 @@
 html {
   background-color: var(--cor-fundo-pagina);
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -37,15 +38,23 @@ body {
   grid-template-columns: minmax(
     auto,
     1000px
-  ); /* Site centralizado com 1000px */
+  );
   justify-content: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* ==========================================
    3. CABEÇALHO (Logo e Contatos)
    ========================================== */
 .cabecalho {
-  color:var(--cor-texto-contato);
+  color: var(--cor-texto-contato);
   padding: var(--espacamento-padrao);
   display: flex;
   flex-direction: column;
@@ -122,12 +131,22 @@ body {
 /*RESPONSIVIDADE*/
 
 @media screen and (max-width: 820px) {
-    body { grid-template-columns: 100%; padding: 15px; }
-    .header { flex-direction: column; text-align: center; }
+  body {
+    grid-template-columns: 100%;
+    padding: 15px;
+  }
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 /* Configuração específica para CELULARES */
 @media screen and (max-width: 480px) {
-    .titulo-servico { font-size: 1.5rem; } /* Diminui um pouco mais que no tablet */
-    nav { gap: 5px; }
+  .titulo-servico {
+    font-size: 1.5rem;
+  } /* Diminui um pouco mais que no tablet */
+  nav {
+    gap: 5px;
+  }
 }

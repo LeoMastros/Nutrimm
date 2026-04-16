@@ -2,93 +2,97 @@
    SEÇÃO DE CONTATO
    ========================================== */
 .contato-principal {
-    padding: 20px;
+  padding: 20px;
 }
 
 .contato-titulo {
-    font-size: 2rem;
-    color: var(--cor-verde-nutrimm);
-    margin-bottom: 10px;
+  font-size: 2rem;
+  color: var(--cor-verde-nutrimm);
+  margin-bottom: 10px;
 }
 
 .contato-grade {
-    display: grid;
-    grid-template-columns: 2fr 1fr; /* Formulário maior que a lateral */
-    gap: 40px;
-    margin-top: 30px;
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Formulário maior que a lateral */
+  gap: 40px;
+  margin-top: 30px;
 }
 
 /* ==========================================
    FORMULÁRIO
    ========================================== */
 .formulario-contato {
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .campo-grupo {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .campo-grupo label {
-    font-weight: bold;
-    margin-bottom: 8px;
-    color: var(--cor-texto-principal);
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--cor-texto-principal);
 }
 
-.campo-grupo input, 
+.campo-grupo input,
 .campo-grupo textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-family: inherit;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
 }
 
 .botao-enviar {
-    background-color: var(--cor-verde-nutrimm);
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-weight: bold;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+  background-color: var(--cor-verde-nutrimm);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .botao-enviar:hover {
-    background-color: #2e8f3b; /* Um verde um pouco mais escuro */
-    transform: scale(1.02);
+  background-color: #2e8f3b; /* Um verde um pouco mais escuro */
+  transform: scale(1.02);
 }
 
 /* ==========================================
    LATERAL DE INFORMAÇÕES
    ========================================== */
 .info-caixa {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .info-caixa h3 {
-    color: var(--cor-verde-nutrimm);
-    margin-bottom: 10px;
+  color: var(--cor-verde-nutrimm);
+  margin-bottom: 10px;
 }
 
 /* ==========================================
    RESPONSIVIDADE
    ========================================== */
 @media screen and (max-width: 480px) {
-    .contato-info { /* Onde ficam o form e o endereço lado a lado */
-        display: flex;
-        flex-direction: column;
-    }
+  .contato-info {
+    /* Onde ficam o form e o endereço lado a lado */
+    display: flex;
+    flex-direction: column !important;
+    width: 100%;
+    padding: 20px;
+  }
 
-    .info-caixa {
-        text-align: center; /* Centraliza o texto para combinar com o mobile */
-        margin-top: 30px;
-    }
+  .info-caixa {
+    width: 100% !important;
+    text-align: center; /* Centraliza o texto para combinar com o mobile */
+    margin-top: 30px;
+  }
 }
