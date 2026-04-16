@@ -35,19 +35,16 @@ body {
   color: var(--cor-texto-principal);
   line-height: 1.6;
   display: grid;
-  grid-template-columns: minmax(
-    auto,
-    1000px
-  );
+  grid-template-columns: minmax(auto, 1000px);
   justify-content: center;
   width: 100%;
   overflow-x: hidden;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* ==========================================
@@ -134,19 +131,27 @@ img {
   body {
     grid-template-columns: 100%;
     padding: 15px;
+    flex-wrap: wrap;
   }
   .header {
     flex-direction: column;
     text-align: center;
+    flex-wrap: wrap;
   }
 }
 
 /* Configuração específica para CELULARES */
 @media screen and (max-width: 480px) {
-  .titulo-servico {
-    font-size: 1.5rem;
-  } /* Diminui um pouco mais que no tablet */
   nav {
-    gap: 5px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens pulem linha */
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  nav a {
+    font-size: 0.9rem; /* Diminui um pouco a letra para caberem lado a lado */
+    padding: 5px 10px;
   }
 }
