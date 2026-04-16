@@ -21,50 +21,36 @@
 /* ==========================================
    FORMULÁRIO
    ========================================== */
-.formulario-contato {
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+.btn-whatsapp {
+    height: 150px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366; /* Verde oficial do WhatsApp */
+    color: #ffffff;
+    padding: 12px 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-.campo-grupo {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
+/* Efeito ao passar o mouse */
+.btn-whatsapp:hover {
+    background-color: #128C7E; /* Tom de verde mais escuro */
+    transform: translateY(-3px); /* Eleva o botão levemente */
+    box-shadow: 0 6px 20px rgba(18, 140, 126, 0.4);
+    color: #ffffff;
 }
 
-.campo-grupo label {
-  font-weight: bold;
-  margin-bottom: 8px;
-  color: var(--cor-texto-principal);
+/* Efeito ao clicar */
+.btn-whatsapp:active {
+    transform: translateY(-1px);
 }
 
-.campo-grupo input,
-.campo-grupo textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-family: inherit;
-}
 
-.botao-enviar {
-  background-color: var(--cor-verde-nutrimm);
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  font-weight: bold;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.botao-enviar:hover {
-  background-color: #2e8f3b; /* Um verde um pouco mais escuro */
-  transform: scale(1.02);
-}
 
 /* ==========================================
    LATERAL DE INFORMAÇÕES
