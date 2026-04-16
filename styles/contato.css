@@ -81,3 +81,14 @@
 /* ==========================================
    RESPONSIVIDADE
    ========================================== */
+@media screen and (max-width: 480px) {
+    .contato-info { /* Onde ficam o form e o endereço lado a lado */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-caixa {
+        text-align: center; /* Centraliza o texto para combinar com o mobile */
+        margin-top: 30px;
+    }
+}

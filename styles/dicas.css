@@ -105,3 +105,16 @@
   font-size: 1.2rem;
 }
 
+/*RESPONSIVIDADE CALCULADORA IMC E AGUA*/
+@media screen and (max-width: 480px) {
+    .container-calculadoras { /* Use o nome da sua classe aqui */
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%; /* Faz o card ocupar a largura disponível */
+        max-width: 320px; /* Impede que ele fique largo demais */
+    }
+}
