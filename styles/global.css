@@ -155,3 +155,17 @@ img {
     padding: 5px 10px;
   }
 }
+@media screen and (max-width: 390px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap; /* Se não couber na linha, ele pula para baixo */
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 100%;
+  }
+
+  nav a {
+    font-size: 14px; /* Tamanho bom para o toque no iPhone */
+    padding: 8px;
+  }
+}
