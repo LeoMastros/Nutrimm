@@ -10,7 +10,6 @@
   --cor-texto-principal: #050505;
   --cor-branco: #66f34a1a;
   --cor-texto-contato: rgb(253, 253, 253);
-
   --fonte-principal: Arial, sans-serif;
   --espacamento-padrao: 20px;
 }
@@ -34,7 +33,7 @@ body {
   font-family: var(--fonte-principal);
   color: var(--cor-texto-principal);
   line-height: 1.6;
-  display: grid;
+
   grid-template-columns: minmax(auto, 1000px);
   justify-content: center;
   width: 100%;
@@ -143,14 +142,14 @@ img {
 @media screen and (max-width: 480px) {
   nav {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     padding: 10px 0;
   }
 
   nav a {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
     padding: 5px 10px;
   }
 }

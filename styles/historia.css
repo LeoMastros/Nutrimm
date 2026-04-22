@@ -1,11 +1,12 @@
 /* ==========================================
    1. LAYOUT DA PÁGINA HISTÓRIA
    ========================================== */
+html {
+  background-color: white;
+}
 .conteudo-historia {
   padding: 40px 20px;
-  background-color: var(
-    --cor-branco
-  ); /* Fundo branco para parecer papel/texto */
+  background-color: white;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
   margin-top: 20px;
@@ -17,13 +18,21 @@
   margin-bottom: 30px;
   text-align: center;
 }
+.card-historia {
+  background-color: var(--cor-fundo-suave);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px #0000000d;
+  max-width: 850px;
+  margin: 0 auto;
+}
 
 /* ==========================================
    2. TEXTO E FORMATAÇÃO
    ========================================== */
 .texto-narrativo {
-  max-width: 800px; /* Limita a largura para o texto não ficar cansativo */
-  margin: 0 auto; /* Centraliza o bloco de texto */
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .texto-narrativo p {
@@ -45,7 +54,7 @@
 .assinatura-container {
   margin-top: 50px;
   text-align: center;
-  border-top: 1px solid #eee;
+  
   padding-top: 30px;
 }
 
@@ -61,8 +70,5 @@
   margin-top: 5px;
 }
 .titulo-historia {
-    font-size: 1.8rem;
-  }
-
-
-  
+  font-size: 1.8rem;
+}

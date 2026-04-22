@@ -2,55 +2,56 @@
    SEÇÃO DE CONTATO
    ========================================== */
 .contato-principal {
-  padding: 20px;
+  padding: 60px 20px; /* Mais respiro no topo e na base */
+  max-width: 1100px; /* Limite para o conteúdo não "espalhar" demais */
+  margin: 0 auto; /* Centraliza a seção inteira */
 }
 
 .contato-titulo {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--cor-verde-nutrimm);
-  margin-bottom: 10px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 15px;
 }
 
 .contato-grade {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* Formulário maior que a lateral */
-  gap: 40px;
-  margin-top: 30px;
+  grid-template-columns: 1.5fr 1fr; /* Proporção mais equilibrada */
+  gap: 60px; /* Aumentei o espaço entre as colunas */
+  align-items: start; /* Garante que os itens não estiquem verticalmente */
 }
 
 /* ==========================================
    FORMULÁRIO
    ========================================== */
 .btn-whatsapp {
-    height: 150px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #25D366; /* Verde oficial do WhatsApp */
-    color: #ffffff;
-    padding: 12px 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 8px;
-    cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: #ffffff;
+  padding: 18px 35px; /* Padding maior para um clique fácil */
+  font-size: 1.2rem; /* Tamanho mais equilibrado */
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px; /* Bordas totalmente arredondadas (estilo pílula) são tendência */
+  transition: all 0.3s ease; /* Transição suave para todos os efeitos */
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
 }
 
 /* Efeito ao passar o mouse */
 .btn-whatsapp:hover {
-    background-color: #128C7E; /* Tom de verde mais escuro */
-    transform: translateY(-3px); /* Eleva o botão levemente */
-    box-shadow: 0 6px 20px rgba(18, 140, 126, 0.4);
-    color: #ffffff;
+  background-color: #128c7e; /* Tom de verde mais escuro */
+  transform: translateY(-3px); /* Eleva o botão levemente */
+  box-shadow: 0 6px 20px rgba(18, 140, 126, 0.4);
+  color: #ffffff;
 }
 
 /* Efeito ao clicar */
 .btn-whatsapp:active {
-    transform: translateY(-1px);
+  transform: translateY(-1px);
 }
-
-
 
 /* ==========================================
    LATERAL DE INFORMAÇÕES
@@ -62,24 +63,29 @@
 .info-caixa h3 {
   color: var(--cor-verde-nutrimm);
   margin-bottom: 10px;
+  
+}
+
+.info-caixa p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1.1rem;
 }
 
 /* ==========================================
    RESPONSIVIDADE
    ========================================== */
 @media screen and (max-width: 480px) {
-    
-    .contato-info { 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
+  .contato-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 
-    .info-caixa {
-        width: 100%;
-        text-align: center;
-        margin-top: 30px;
-
-    }
+  .info-caixa {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
 }
