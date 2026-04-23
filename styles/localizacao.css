@@ -2,7 +2,7 @@
    1. ESTRUTURA DA PÁGINA DE LOCALIZAÇÃO
    ========================================== */
 .conteudo-localizacao {
-  padding: 40px 20px;
+  padding: 10px 20px;
   max-width: 900px; /* Deixa o conteúdo do mapa centralizado e não muito largo */
   margin: 0 auto;
 }
@@ -54,6 +54,5 @@
   display: block;
 }
 .conteudo-localizacao {
-    padding: 20px 10px;
-  }
-
+  padding: 20px 10px;
+}

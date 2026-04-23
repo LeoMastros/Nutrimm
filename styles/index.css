@@ -50,7 +50,7 @@
   color: var(--cor-texto-principal);
 }
 
-.avaliacoes{
+.avaliacoes {
   margin-bottom: 50px;
 }
 
@@ -80,7 +80,6 @@
 .caixa-endereco {
   border-left: 2px solid var(--cor-verde-nutrimm);
   padding-left: 30px;
-  
 }
 
 /* ==========================================
@@ -103,5 +102,46 @@
   opacity: 0.9;
 }
 .titulo-home {
-    font-size: 2rem;
+  font-size: 2rem;
+}
+
+.botao-planos-servicos {
+  padding: 25px;
+  border-radius: 80px;
+  border-top: 5px solid var(--cor-verde-nutrimm);
+  border-bottom: 5px solid var(--cor-verde-nutrimm);
+  text-align: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: white;
+  background: var(--fundo-botao);
+  animation: pulse-animation 2s infinite;
+}
+@keyframes pulse-animation {
+  0% {
+    transform: scale(1);
   }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.botao-planos-servicos:hover {
+  transform: translateY(-3px);
+}
+
+.botao-planos-servicos:active {
+  transform: translateY(-2px);
+}
+
+.centro-botao {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}

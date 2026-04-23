@@ -2,7 +2,7 @@
    1. TOPO DA PÁGINA (INTRODUÇÃO)
    ========================================== */
 .conteudo-servicos {
-  padding: 40px 20px;
+  padding: 10px 20px;
 }
 
 .introducao-servicos {
@@ -20,6 +20,7 @@
   color: var(--cor-verde-nutrimm);
   font-weight: 400;
   margin-bottom: 15px;
+  margin-top: 50px;
 }
 
 .texto-informativo {
@@ -52,18 +53,75 @@
 }
 
 .cartao-servico h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #222;
   margin-bottom: 15px;
   font-size: 1.3rem;
 }
 
 .cartao-servico p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 0.95rem;
   color: #555;
   line-height: 1.6;
 }
 .titulo-pagina {
-    font-size: 2rem;
+  font-size: 2rem;
+}
+
+.plano h1 {
+  margin-bottom: 40px;
+  color: var(--cor-verde-nutrimm);
+}
+.plano a {
+  background: var(--cor-branco);
+  padding: 15px 50px;
+  font-size: 1.2rem;
+  margin: 30px;
+  border-radius: 120px;
+  border-top: 8px solid var(--cor-verde-nutrimm);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.plano p {
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
+.botao-contato {
+  display: inline-block;
+  animation: pulse-animation 2s infinite;
+  padding: 20px 20px;
+  border-radius: 10px;
+  border-top: 5px solid var(--cor-verde-nutrimm);
+  border-bottom: 5px solid var(--cor-verde-nutrimm);
+  text-align: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: white;
+  background: var(--fundo-botao);
+  margin-left: 30px;
+}
+@keyframes pulse-animation {
+  0% {
+    transform: scale(1);
   }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.botao-contato:hover {
+  transform: translateY(-3px);
+}
+
+.botao-contato:active {
+  transform: translateY(-2px);
+}

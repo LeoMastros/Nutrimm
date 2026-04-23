@@ -12,6 +12,7 @@
   --cor-texto-contato: rgb(253, 253, 253);
   --fonte-principal: Arial, sans-serif;
   --espacamento-padrao: 20px;
+  --fundo-botao: #48d325;
 }
 
 /* ==========================================
@@ -123,6 +124,7 @@ img {
   margin-right: auto;
   border-radius: 25px;
 }
+
 
 /*RESPONSIVIDADE*/
 
