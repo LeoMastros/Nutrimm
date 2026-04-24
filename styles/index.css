@@ -134,6 +134,7 @@
 }
 .botao-planos-servicos:hover {
   transform: translateY(-3px);
+  background-color: var(--cor-verde-nutrimm);
 }
 
 .botao-planos-servicos:active {

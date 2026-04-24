@@ -15,15 +15,27 @@ html {
 .titulo-historia {
   color: var(--cor-verde-nutrimm);
   font-size: 2.2rem;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   text-align: center;
+  position: relative;
+}
+
+/* Linha decorativa embaixo do título principal */
+.titulo-historia::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--cor-verde-nutrimm);
+  margin: 10px auto 0;
+  border-radius: 2px;
 }
 .card-historia {
   background-color: var(--cor-fundo-suave);
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 4px 20px #0000000d;
-  max-width: 850px;
+  max-width: 1285px;
   margin: 0 auto;
 }
 
@@ -31,15 +43,15 @@ html {
    2. TEXTO E FORMATAÇÃO
    ========================================== */
 .texto-narrativo {
-  max-width: 800px;
+  max-width: 1285px;
   margin: 0 auto;
 }
 
 .texto-narrativo p {
-  margin-bottom: 25px;
-  font-size: 1.15rem;
-  line-height: 1.8; /* Aumenta o espaço entre linhas para facilitar a leitura */
-  text-align: justify; /* Deixa o texto alinhado dos dois lados */
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  line-height: 1.5; 
+  text-align: justify; 
   color: #444;
 }
 

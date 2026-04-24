@@ -16,11 +16,14 @@
 }
 
 .subtitulo-pagina {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   color: var(--cor-verde-nutrimm);
+  font-size: 35px;
   font-weight: 400;
   margin-bottom: 15px;
   margin-top: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .texto-informativo {
@@ -35,12 +38,15 @@
 .grade-servicos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
+  gap: 30px;
+  padding: 40px 20px;
+  background: var(--cor-fundo-suave);
+  border-radius: 15px;
 }
 
 .cartao-servico {
-  background: var(--cor-branco);
-  padding: 30px;
+  background: rgba(255, 255, 255, 0.795);
+  padding: 40px 20px;
   border-radius: 12px;
   border-top: 8px solid var(--cor-verde-nutrimm);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
@@ -72,39 +78,53 @@
 .plano h1 {
   margin-bottom: 40px;
   color: var(--cor-verde-nutrimm);
+  display: flex;
+  justify-content: center;
 }
+
+.plano nav {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
 .plano a {
-  background: var(--cor-branco);
-  padding: 15px 50px;
+  background: rgba(255, 255, 255, 0.795);
+  padding: 10px;
   font-size: 1.2rem;
-  margin: 30px;
   border-radius: 120px;
-  border-top: 8px solid var(--cor-verde-nutrimm);
+  border-top: 4px solid var(--cor-verde-nutrimm);
+  border-bottom: 4px solid var(--cor-verde-nutrimm);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
+  width: fit-content;
 }
 
 .plano p {
   margin-top: 60px;
   margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
 }
-
 .botao-contato {
-  display: inline-block;
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  align-items: center;
   animation: pulse-animation 2s infinite;
-  padding: 20px 20px;
+  padding: 12px 30px;
   border-radius: 10px;
   border-top: 5px solid var(--cor-verde-nutrimm);
   border-bottom: 5px solid var(--cor-verde-nutrimm);
-  text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   color: white;
   background: var(--fundo-botao);
-  margin-left: 30px;
+  display: flex;
+  justify-content: center;
 }
 @keyframes pulse-animation {
   0% {
@@ -120,6 +140,8 @@
 
 .botao-contato:hover {
   transform: translateY(-3px);
+  background-color: var(--cor-verde-nutrimm);
+  filter: brightness(1.1);
 }
 
 .botao-contato:active {
