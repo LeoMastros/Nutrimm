@@ -128,44 +128,81 @@ img {
 
 /*RESPONSIVIDADE*/
 
+/* TABLETS (Telas até 820px) */
 @media screen and (max-width: 820px) {
   body {
-    grid-template-columns: 100%;
-    padding: 15px;
-    flex-wrap: wrap;
-  }
-  .header {
+    /* Ajustando o grid que estava solto no seu código */
+    display: flex;
     flex-direction: column;
-    text-align: center;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px 0;
+    align-items: center;
+    padding: 0 10px;
   }
 
-  nav a {
-    font-size: 0.9rem;
-    padding: 5px 10px;
-  }
-}
-@media screen and (max-width: 390px) {
-  nav {
+  /* O container que segura os blocos do seu print */
+  /* Substitua '.container-principal' pela classe real das suas divs */
+  .container-principal, 
+  .secao-servicos { 
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 10px;
+    flex-direction: column; /* Empilha os blocos */
+    align-items: center;
     width: 100%;
+    gap: 20px;
   }
 
-  nav a {
-    font-size: 14px;
-    padding: 8px;
+  .cabecalho {
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .menu-principal {
+    flex-wrap: wrap; /* Permite que os links do menu quebrem linha se necessário */
+    justify-content: center;
+  }
+}
+
+/* CELULARES GRANDES (Telas até 480px) */
+@media screen and (max-width: 480px) {
+  .cabecalho-logo {
+    width: 130px; /* Reduz um pouco o logo */
+  }
+
+  .cabecalho-contato {
+    font-size: 1rem;
+  }
+
+  .menu-link {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  /* Ajuste para o bloco verde do print */
+  .bloco-conteudo { 
+    width: 100%;
+    padding: 15px;
+    border-right: none !important; /* Remove aquela linha vertical divisória */
+    border-bottom: 2px solid var(--cor-verde-nutrimm); /* Opcional: linha embaixo */
+  }
+
+  .rodape {
+    width: 95%;
+    border-radius: 15px;
+    padding: 10px;
+  }
+}
+
+/* CELULARES PEQUENOS (Telas até 320px - iPhone SE / Moto G) */
+@media screen and (max-width: 320px) {
+  .menu-principal {
+    flex-direction: column; /* Menu vira uma lista vertical */
+    align-items: stretch;
+  }
+
+  .menu-link {
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  h2 {
+    font-size: 1.4rem; /* Diminui títulos muito grandes */
   }
 }
