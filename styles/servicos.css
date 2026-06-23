@@ -37,7 +37,7 @@
    ========================================== */
 .grade-servicos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   padding: 40px 20px;
   background: var(--cor-fundo-suave);
@@ -83,9 +83,18 @@
 }
 
 .plano nav {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+  gap: 15px;
+}
+
+.plano nav a:last-child {
+  grid-column: 1 / span 3;
+  width: fit-content; /* Mantém o tamanho original dele */
 }
 
 .plano a {
@@ -146,4 +155,38 @@
 
 .botao-contato:active {
   transform: translateY(-2px);
+}
+@media screen and (max-width: 600px) {
+
+  .grade-servicos {
+    /* Muda de 300px fixos para um valor menor ou 100% da tela */
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 10px;
+    gap: 15px;
+  }
+
+  /* 2. Corrige o menu de planos */
+  .plano nav {
+    flex-direction: column; /* Empilha os planos */
+    gap: 15px; /* Reduz o espaçamento gigante */
+    align-items: center;
+  }
+
+  /* 3. Ajuste do título para não cortar */
+  .titulo-pagina {
+    font-size: 1.6rem !important;
+  }
+
+  .subtitulo-pagina {
+    font-size: 1.4rem !important;
+    margin-top: 20px;
+  }
+
+  /* 4. Ajuste do botão de contato para mobile */
+  .botao-contato {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    width: 90%; /* Ocupa quase toda a largura */
+    text-align: center;
+  }
 }
