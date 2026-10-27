@@ -101,8 +101,11 @@
   background-color: #2e8f3b;
   opacity: 0.9;
 }
-.titulo-home {
-  font-size: 2rem;
+
+.centro-botao {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .botao-planos-servicos {
@@ -121,17 +124,13 @@
   background: var(--fundo-botao);
   animation: pulse-animation 2s infinite;
 }
+
 @keyframes pulse-animation {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }
+
 .botao-planos-servicos:hover {
   transform: translateY(-3px);
   background-color: var(--cor-verde-nutrimm);
@@ -141,8 +140,52 @@
   transform: translateY(-2px);
 }
 
-.centro-botao {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
+
+/* =========================================
+   5. RESPONSIVIDADE - PÁGINA INÍCIO
+   ========================================= */
+
+/* TABLETS EM PÉ (Telas até 768px) */
+@media screen and (max-width: 768px) {
+  /* Passa a lista e o endereço de 2 colunas para 1 coluna (empilhados) */
+  .secao-lista {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 20px 10px; /* Reduz margens nas laterais para liberar espaço */
+    padding: 30px 15px;
+  }
+
+  /* Muda a borda para cima, pois a caixa agora fica embaixo da lista */
+  .caixa-endereco {
+    border-left: none;
+    padding-left: 0;
+    border-top: 2px solid var(--cor-verde-nutrimm);
+    padding-top: 20px;
+    text-align: center; /* Centraliza o endereço no celular */
+  }
+
+  /* Centraliza a lista também */
+  .lista-simples {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+/* CELULARES (Telas até 480px) */
+@media screen and (max-width: 480px) {
+  .titulo-home {
+    font-size: 1.8rem;
+  }
+
+  .grade-cartoes {
+    margin: 20px 10px; 
+  }
+
+  /* Impede o botão animado de estourar a largura da tela */
+  .botao-planos-servicos {
+    font-size: 1.2rem;
+    padding: 15px 20px;
+    width: 90%;
+    max-width: 300px;
+  }
 }

@@ -18,10 +18,11 @@
 /* ==========================================
    2. RESET (Zerar o padrão do navegador)
    ========================================== */
+/* CORREÇÃO: O asterisco (*) seleciona todos os elementos do site */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Garante que o tamanho dos elementos seja exato */
+  box-sizing: border-box; /* Fundamental para o padding não estourar a largura da tela */
 }
 
 html {
@@ -34,11 +35,8 @@ body {
   font-family: var(--fonte-principal);
   color: var(--cor-texto-principal);
   line-height: 1.6;
-
-  grid-template-columns: minmax(auto, 1000px);
-  justify-content: center;
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Mantido como segurança extra contra rolagem horizontal */
 }
 
 img {
@@ -58,10 +56,15 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background-image: url("../Imagens/banner.jpg");
+  
   background-image:
     linear-gradient(rgba(12, 12, 12, 0.26), rgb(10, 10, 10)),
     url("../Imagens/banner.jpg");
+    
+  /* CORREÇÃO: Faz a imagem de fundo se adaptar e centralizar em qualquer tela */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .cabecalho-logo {
@@ -107,18 +110,14 @@ img {
 }
 
 .menu-link.link-ativo {
-  color: var(--cor-texto-principal); /* Muda a cor do texto para destacar */
-  background-color: rgba(255, 255, 255, 0.5); /* Fundo branco sutil */
-  border-bottom: 3px solid var(--cor-destaque-vermelho); /* Borda vermelha embaixo */
+  color: var(--cor-texto-principal); 
+  background-color: rgba(255, 255, 255, 0.5); 
+  border-bottom: 3px solid var(--cor-destaque-vermelho); 
   border-radius: 4px 4px 0 0;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 /* =========================================
-   RESPONSIVIDADE 
+   RESPONSIVIDADE GLOBAL
    ========================================= */
 
 /* TABLETS E NOTEBOOKS MENORES (Telas até 1024px) */
@@ -132,14 +131,13 @@ img {
 /* TABLETS TRADICIONAIS (Telas até 768px) */
 @media screen and (max-width: 768px) {
   body {
-    /* Flex removido do body. Apenas mantemos o respiro lateral */
     padding: 0 10px;
   }
 
   .container-principal,
   .secao-servicos {
     display: flex;
-    flex-direction: column; /* Empilha os blocos */
+    flex-direction: column; 
     align-items: center;
     width: 100%;
     gap: 30px;
@@ -152,7 +150,7 @@ img {
 
   .menu-principal {
     display: flex;
-    flex-wrap: wrap; /* Permite quebra de linha natural */
+    flex-wrap: wrap; 
     justify-content: center;
     gap: 10px;
   }
@@ -168,6 +166,10 @@ img {
     font-size: 1rem;
   }
 
+  .cabecalho-slogan {
+    font-size: 0.9rem; /* Leve redução no slogan para caber melhor */
+  }
+
   .menu-link {
     font-size: 0.9rem;
     padding: 10px;
@@ -181,7 +183,7 @@ img {
   }
 
   .rodape {
-    width: 100%; /* Corrigido de 95% para 100% devido ao box-sizing */
+    width: 100%; 
     border-radius: 15px;
     padding: 15px 10px;
   }
@@ -198,7 +200,7 @@ img {
     display: block;
     text-align: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 15px 10px; /* Área de clique maior para o dedo */
+    padding: 15px 10px; 
   }
 
   h2 {
