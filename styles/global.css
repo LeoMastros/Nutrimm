@@ -113,40 +113,36 @@ img {
   border-radius: 4px 4px 0 0;
 }
 
-/* ==========================================
-   5. RODAPÉ (Final da página)
-   ========================================== */
-.rodape {
-  text-align: center;
-  background-color: #c0fabb4b;
-  font-size: 0.9rem;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 25px;
+* {
+  box-sizing: border-box;
 }
 
+/* =========================================
+   RESPONSIVIDADE 
+   ========================================= */
 
-/*RESPONSIVIDADE*/
+/* TABLETS E NOTEBOOKS MENORES (Telas até 1024px) */
+@media screen and (max-width: 1024px) {
+  .container-principal,
+  .secao-servicos {
+    gap: 15px;
+  }
+}
 
-/* TABLETS (Telas até 820px) */
-@media screen and (max-width: 820px) {
+/* TABLETS TRADICIONAIS (Telas até 768px) */
+@media screen and (max-width: 768px) {
   body {
-    /* Ajustando o grid que estava solto no seu código */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* Flex removido do body. Apenas mantemos o respiro lateral */
     padding: 0 10px;
   }
 
-  /* O container que segura os blocos do seu print */
-  /* Substitua '.container-principal' pela classe real das suas divs */
-  .container-principal, 
-  .secao-servicos { 
+  .container-principal,
+  .secao-servicos {
     display: flex;
     flex-direction: column; /* Empilha os blocos */
     align-items: center;
     width: 100%;
-    gap: 20px;
+    gap: 30px;
   }
 
   .cabecalho {
@@ -155,15 +151,17 @@ img {
   }
 
   .menu-principal {
-    flex-wrap: wrap; /* Permite que os links do menu quebrem linha se necessário */
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha natural */
     justify-content: center;
+    gap: 10px;
   }
 }
 
 /* CELULARES GRANDES (Telas até 480px) */
 @media screen and (max-width: 480px) {
   .cabecalho-logo {
-    width: 130px; /* Reduz um pouco o logo */
+    width: 130px;
   }
 
   .cabecalho-contato {
@@ -175,34 +173,35 @@ img {
     padding: 10px;
   }
 
-  /* Ajuste para o bloco verde do print */
-  .bloco-conteudo { 
+  .bloco-conteudo {
     width: 100%;
     padding: 15px;
-    border-right: none !important; /* Remove aquela linha vertical divisória */
-    border-bottom: 2px solid var(--cor-verde-nutrimm); /* Opcional: linha embaixo */
+    border-right: none !important;
+    border-bottom: 2px solid var(--cor-verde-nutrimm);
   }
 
   .rodape {
-    width: 95%;
+    width: 100%; /* Corrigido de 95% para 100% devido ao box-sizing */
     border-radius: 15px;
-    padding: 10px;
+    padding: 15px 10px;
   }
 }
 
-/* CELULARES PEQUENOS (Telas até 320px - iPhone SE / Moto G) */
+/* CELULARES PEQUENOS (Telas até 320px) */
 @media screen and (max-width: 320px) {
   .menu-principal {
-    flex-direction: column; /* Menu vira uma lista vertical */
+    flex-direction: column;
     align-items: stretch;
   }
 
   .menu-link {
+    display: block;
     text-align: center;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px 10px; /* Área de clique maior para o dedo */
   }
 
   h2 {
-    font-size: 1.4rem; /* Diminui títulos muito grandes */
+    font-size: 1.4rem;
   }
 }
